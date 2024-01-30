@@ -1,6 +1,6 @@
-# MinimalApiVb
+# MinimalWebApiVb
 
-Minimal Api Template for VB.net
+Minimal Web API Template for VB.net
 
 ## Usage
 
