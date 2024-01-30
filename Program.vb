@@ -9,7 +9,12 @@ Module Program
         Dim builder = WebApplication.CreateBuilder(args)
         Dim app = builder.Build()
 
+        ' Endopoint GET /hello/{username}
+        ' Example: http://localhost:5000/hello/John
         app.MapGet("/hello/{username}", Function(username as String) "Hello "& username &"!")
+
+        ' Endopoint GET /
+        ' Example: http://localhost:5000/
         app.MapGet("/", Function() "Hello World!")
 
         app.Run(host)
